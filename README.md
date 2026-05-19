@@ -24,11 +24,35 @@ An AI-powered analytics assistant that combines retrieval-augmented generation (
 
 ## Architecture
 
-User Input
-→ Semantic Retrieval
-→ Context Injection
-→ LLM Reasoning
-→ Structured Output
+```mermaid
+flowchart TD
+    A[User] --> B[Streamlit Frontend]
+
+    B --> C[CSV Upload]
+    C --> D[Dataset Summary]
+
+    D --> E[Analytics Engine]
+    E --> E1[KPI Analysis]
+    E --> E2[Segment Analysis]
+    E --> E3[Trend Visualization]
+    E --> E4[Anomaly Detection]
+
+    D --> F[RAG Retrieval Layer]
+    F --> F1[Embedding Generation]
+    F --> F2[Semantic Search]
+    F --> F3[Retrieved Context]
+
+    E --> G[LLM Reasoning Layer]
+    F3 --> G
+
+    G --> G1[Structured JSON Output]
+    G --> G2[Executive Insights]
+    G --> G3[Conversation Memory]
+
+    G1 --> H[User-Facing Insights]
+    G2 --> H
+    G3 --> H
+```
 
 ## Screenshots
 

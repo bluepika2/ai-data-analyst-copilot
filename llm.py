@@ -132,3 +132,32 @@ Provide concise business insights.
     )
 
     return response.choices[0].message.content
+
+def generate_executive_insights(analytics_summary):
+    prompt = f"""
+You are a senior data analyst.
+
+Analyze the following analytics summary:
+
+{json.dumps(analytics_summary, indent=2, default=str)}
+
+Generate concise executive insights.
+
+Focus on:
+- key KPI changes
+- underperforming segments or regions
+- potential business concerns
+- recommended next investigations
+
+Return the answer in clear bullet points.
+"""
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.2
+    )
+
+    return response.choices[0].message.content
