@@ -1,26 +1,23 @@
 # AI Data Analyst Copilot
 
-An AI-powered analytics assistant that combines retrieval-augmented generation (RAG), semantic retrieval, structured reasoning, visualization, and anomaly detection to generate grounded insights from uploaded datasets.
+An AI-powered analytics assistant that combines retrieval-augmented generation (RAG), semantic retrieval, structured reasoning, visualization, anomaly detection, and conversation memory to generate grounded insights from uploaded datasets.
+
+---
 
 ## Features
 
-- CSV upload and summarization
+- CSV ingestion and dataset summarization
+- KPI analysis and segment comparison
+- AI-generated executive insights
 - Semantic retrieval using embeddings
+- Retrieval-Augmented Generation (RAG)
 - Conversation memory
-- Structured JSON outputs
 - Revenue trend visualization
-- AI-generated analytical insights
 - Anomaly detection and explanation
-- Streamlit frontend
+- Interactive Streamlit frontend
+- Downloadable AI insights report
 
-## Tech Stack
-
-- Python
-- OpenAI API
-- Streamlit
-- Pandas
-- NumPy
-- Matplotlib
+---
 
 ## Architecture
 
@@ -54,15 +51,46 @@ flowchart TD
     G3 --> H
 ```
 
+---
+
 ## Screenshots
 
-### Trend Visualization
+### Main Dashboard
 
-![Trend Chart](screenshots/trend_chart.png)
+![Dashboard](screenshots/dashboard.png)
 
-### AI Insight Generation
+### Trend Analysis
 
-![AI Insight](screenshots/ai_insight.png)
+![Trend Analysis](screenshots/trend_analysis.png)
+
+### Anomaly Detection
+
+![Anomaly Detection](screenshots/anomaly_detection.png)
+
+---
+
+## Tech Stack
+
+- Python
+- OpenAI API
+- Streamlit
+- Pandas
+- NumPy
+- Matplotlib
+
+---
+
+## Key AI Concepts Implemented
+
+- Retrieval-Augmented Generation (RAG)
+- Semantic Search with Embeddings
+- Structured JSON Outputs
+- Conversation Memory
+- AI-Assisted Analytics
+- Anomaly Detection
+- Executive Insight Generation
+
+---
 
 ## Run Locally
 
@@ -70,3 +98,20 @@ flowchart TD
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
+
+---
+
+## Future Improvements
+
+- Vector database integration
+- Multi-dataset support
+- SQL query integration
+- Advanced anomaly detection
+- Real-time analytics pipelines
+- Role-based analytics workflows
+
+---
+
+## Project Motivation
+
+This project was designed to explore how modern LLM systems can assist analytical workflows beyond simple chatbot interactions by combining retrieval, structured reasoning, business analytics, and conversational interfaces.
