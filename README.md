@@ -115,3 +115,7 @@ streamlit run streamlit_app.py
 ## Project Motivation
 
 This project was designed to explore how modern LLM systems can assist analytical workflows beyond simple chatbot interactions by combining retrieval, structured reasoning, business analytics, and conversational interfaces.
+
+## Live Demo
+
+[Launch App](https://ai-data-analyst-copilot-nvfnokdm5seojbbjyh6wxw.streamlit.app/)
